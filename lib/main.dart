@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_designs/screens/basic_design.dart';
 
 void main() => runApp(const MyApp());
 
@@ -10,7 +11,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
-      home: Center(child: Text('Hello World')),
+      initialRoute: 'basic_design',
+      routes: {'basic_design': (context) => BasicDesignScreen()},
     );
   }
 }
